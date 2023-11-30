@@ -1,4 +1,4 @@
-FROM maven:3-amazoncorretto-19 as base
+FROM maven as base
 WORKDIR /usr/src/mymaven
 COPY ../ .
 ENTRYPOINT ["mvn", "spring-boot:run"]
