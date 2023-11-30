@@ -10,12 +10,8 @@ services:
       - ../env-dev
     volumes:
       - ../:/usr/src/mymaven
-    ports:
-      - "8080:8080"
   db:
     container_name: postgres
     image: postgres
     env_file:
       - ../env-dev
-    ports:
-      - "5432:5432"
