@@ -1,0 +1,6 @@
+POSTGRES_USER=test
+POSTGRES_DB=postgres
+POSTGRES_PASSWORD=test
+PGDATA='/var/lib/postgresql/data/pgdata'
+
+POSTGRES_URL=jdbc:postgresql://postgres:5432/postgres
