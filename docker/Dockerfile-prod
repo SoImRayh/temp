@@ -4,7 +4,7 @@ COPY ../ .
 RUN mvn clean package -Dmaven.test.skip
 
 
-FROM --platform=linux/arm64 openjdk
+FROM openjdk
 
 WORKDIR /app
 COPY --from=base /usr/src/mymaven/target/app-0.0.1-SNAPSHOT.jar ./app.jar
